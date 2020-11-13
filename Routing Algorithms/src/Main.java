@@ -5,7 +5,6 @@
  *  Date:	 November 12th 2020
  *  Class:   COSC4436
  *  ------------------------------------------------------- */
-package com.company;
 
 public class Main {
     public static void main(String[] args) {
