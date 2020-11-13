@@ -5,6 +5,7 @@
  *  Date:	 November 12th 2020
  *  Class:   COSC4436
  *  ------------------------------------------------------- */
+import java.util.ArrayList;
 
 public class FloodingAlgorithm {
     // Variables
@@ -24,7 +25,7 @@ public class FloodingAlgorithm {
                                {"-------", "-------", "-------", "-------", "-------", "-------", "-------"}};
 
     // No-arg Constructor
-    public FloodingAlgorithm() {}
+    public FloodingAlgorithm() { }
 
     // floodGrid()
     private void floodGrid(String[][] networkGrid, int row, int col) {
