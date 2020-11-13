@@ -8,10 +8,14 @@
 package com.company;
 
 public class DistributedAlgorithm {
+    // Variables
+
+    // No-arg Constructor
     public DistributedAlgorithm() {
 
     }
 
+    // run()
     public void run() {
 
     }
