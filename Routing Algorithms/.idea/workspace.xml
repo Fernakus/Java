@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9eff5c98-a7e9-4753-ba90-1f3e8bb1e947" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Routing Algorithms/com/company/CentralizedAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Routing Algorithms/com/company/CentralizedAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Routing Algorithms/com/company/DistributedAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Routing Algorithms/com/company/DistributedAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Routing Algorithms/com/company/FloodingAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Routing Algorithms/com/company/FloodingAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Routing Algorithms/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Routing Algorithms/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Routing Algorithms/com/company/RandomWalkAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Routing Algorithms/com/company/RandomWalkAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CentralizedAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CentralizedAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DistributedAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DistributedAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/FloodingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FloodingAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/GenericHeap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/GenericQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/GenericStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RandomWalkAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RandomWalkAlgorithm.java" afterDir="false" />
-    </list>
+    <list default="true" id="9eff5c98-a7e9-4753-ba90-1f3e8bb1e947" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,45 +104,65 @@
       <updated>1605202953082</updated>
       <workItem from="1605202957920" duration="1565000" />
       <workItem from="1605204606789" duration="2109000" />
-      <workItem from="1605225927328" duration="9724000" />
+      <workItem from="1605225927328" duration="9778000" />
     </task>
+    <task id="LOCAL-00001" summary="Finished FloodingAlgorithm and added work to RandomWalkAlgorithm">
+      <created>1605237050198</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605237050198</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished FloodingAlgorithm and added work to RandomWalkAlgorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished FloodingAlgorithm and added work to RandomWalkAlgorithm" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1750" height="678" key="GridCell.Tab.0.bottom" timestamp="1605236902555">
+    <state x="330" y="135" key="CommitChangelistDialog2" timestamp="1605237049787">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="678" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1605236902555" />
-    <state width="1750" height="678" key="GridCell.Tab.0.center" timestamp="1605236902554">
+    <state x="330" y="135" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1605237049787" />
+    <state width="1750" height="392" key="GridCell.Tab.0.bottom" timestamp="1605237065276">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="678" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1605236902554" />
-    <state width="1750" height="678" key="GridCell.Tab.0.left" timestamp="1605236902553">
+    <state width="1750" height="392" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1605237065276" />
+    <state width="1750" height="392" key="GridCell.Tab.0.center" timestamp="1605237065275">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="678" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1605236902553" />
-    <state width="1750" height="678" key="GridCell.Tab.0.right" timestamp="1605236902555">
+    <state width="1750" height="392" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1605237065275" />
+    <state width="1750" height="392" key="GridCell.Tab.0.left" timestamp="1605237065275">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="678" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1605236902555" />
-    <state width="1750" height="392" key="GridCell.Tab.1.bottom" timestamp="1605227942056">
+    <state width="1750" height="392" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1605237065275" />
+    <state width="1750" height="392" key="GridCell.Tab.0.right" timestamp="1605237065275">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="392" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1605227942056" />
-    <state width="1750" height="392" key="GridCell.Tab.1.center" timestamp="1605227942055">
+    <state width="1750" height="392" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1605237065275" />
+    <state width="1750" height="392" key="GridCell.Tab.1.bottom" timestamp="1605237065278">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="392" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1605227942055" />
-    <state width="1750" height="392" key="GridCell.Tab.1.left" timestamp="1605227942055">
+    <state width="1750" height="392" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1605237065278" />
+    <state width="1750" height="392" key="GridCell.Tab.1.center" timestamp="1605237065277">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="392" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1605227942055" />
-    <state width="1750" height="392" key="GridCell.Tab.1.right" timestamp="1605227942056">
+    <state width="1750" height="392" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1605237065277" />
+    <state width="1750" height="392" key="GridCell.Tab.1.left" timestamp="1605237065276">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="392" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1605227942056" />
+    <state width="1750" height="392" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1605237065276" />
+    <state width="1750" height="392" key="GridCell.Tab.1.right" timestamp="1605237065277">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="392" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1605237065277" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1605237055390">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1605237055390" />
   </component>
 </project>
