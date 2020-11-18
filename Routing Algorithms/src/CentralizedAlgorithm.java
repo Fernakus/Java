@@ -8,11 +8,34 @@
 
 
 public class CentralizedAlgorithm {
-    public CentralizedAlgorithm() {
+    /*
+     * Private Node class, we will instantiate 98 nodes and
+     * individually they will run the flooding algorithm from a
+     * centralized method
+     */
+    private class Node {
+        private FloodingAlgorithm flood;
 
+        public Node() {
+            flood = new FloodingAlgorithm();
+        }
+
+        private void run() {
+            flood.run();
+        }
+    }
+
+    private ObjectBinarySearchTree tree;
+
+    public CentralizedAlgorithm() {
+        // Populate tree with Nodes
+        tree = new ObjectBinarySearchTree();
+        for (int x = 0; x <= 98; x++)
+            tree.insert(new Node());
     }
 
     public void run() {
-
+        tree.prePrint();
     }
 }
+

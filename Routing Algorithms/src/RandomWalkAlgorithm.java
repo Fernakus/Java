@@ -18,8 +18,8 @@ public class RandomWalkAlgorithm {
     public RandomWalkAlgorithm() {
         random = new Random();
         stepsTaken = 0;
-        x = 0;
-        y = 0;
+        x = 3;
+        y = 3;
     }
 
     // run()
