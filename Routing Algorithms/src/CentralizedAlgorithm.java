@@ -6,36 +6,46 @@
  *  Class:   COSC4436
  *  ------------------------------------------------------- */
 
+import java.time.LocalTime;
 
 public class CentralizedAlgorithm {
     /*
-     * Private Node class, we will instantiate 98 nodes and
-     * individually they will run the flooding algorithm from a
-     * centralized method
+     * Class for threads
      */
-    private class Node {
-        private FloodingAlgorithm flood;
-
-        public Node() {
-            flood = new FloodingAlgorithm();
-        }
-
-        private void run() {
-            flood.run();
+    public class Node implements Runnable{
+        public void run() {
+            new FloodingAlgorithm().run();
         }
     }
 
-    private ObjectBinarySearchTree tree;
+    private BinarySearchTree treeNetwork;
 
     public CentralizedAlgorithm() {
         // Populate tree with Nodes
-        tree = new ObjectBinarySearchTree();
+        treeNetwork = new BinarySearchTree();
         for (int x = 0; x <= 98; x++)
-            tree.insert(new Node());
+            treeNetwork.insert(new Node());
     }
 
     public void run() {
-        tree.prePrint();
+        // Start Algorithm
+        try {
+            LocalTime start = LocalTime.now();
+            treeNetwork.traverseAndRun();
+            LocalTime end = LocalTime.now();
+
+            System.out.println();
+            System.out.println("--- Centralized Flooding Algorithm Test ---");
+            System.out.println("Starting Time: " + start);
+            System.out.println("Ending Time: " + end);
+
+            String difference = (start.getNano() > end.getNano()) ? (start.getNano() - end.getNano()) + "" : (end.getNano() - start.getNano()) + "";
+            System.out.println("Difference (Nanoseconds): " + difference);
+        }
+
+        catch (Exception ex) {
+            System.out.println(ex);
+        }
     }
 }
 

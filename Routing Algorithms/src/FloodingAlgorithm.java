@@ -55,15 +55,13 @@ public class FloodingAlgorithm {
 
     // run()
     public void run() {
-        System.out.println("--- Flooding Algorithm Test ---");
-        System.out.println("Starting Coordinates: (3,3)");
-        showGrid(grid);
-
         // Start Algorithm
         java.time.LocalTime start = java.time.LocalTime.now();
         floodGrid(grid, 3, 3);
         java.time.LocalTime end = java.time.LocalTime.now();
 
+        System.out.println("--- Flooding Algorithm Test ---");
+        System.out.println("Starting Coordinates: (3,3)");
         System.out.println("Starting Time: " + start);
         System.out.println("Ending Time: " + end);
         System.out.println("Difference (Nanoseconds): " + (end.getNano() - start.getNano()));

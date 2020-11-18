@@ -9,8 +9,8 @@
 public class Main {
     public static void main(String[] args) {
         // Adaptive Algorithms
-        new CentralizedAlgorithm().run();
-        // new DistributedAlgorithm().run();
+        //new CentralizedAlgorithm().run();
+        new DistributedAlgorithm().run();
 
         // Non-Adaptive Algorithms
         //new FloodingAlgorithm().run();
