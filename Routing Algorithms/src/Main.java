@@ -9,11 +9,13 @@
 public class Main {
     public static void main(String[] args) {
         // Adaptive Algorithms
-        //new CentralizedAlgorithm().run();
-        new DistributedAlgorithm().run();
+        //CentralizedAlgorithm centralizedAlgorithm = new CentralizedAlgorithm();
+        //centralizedAlgorithm.printResults(centralizedAlgorithm.run());
 
         // Non-Adaptive Algorithms
-        //new FloodingAlgorithm().run();
-        //new RandomWalkAlgorithm().run();
+        //FloodingAlgorithm floodingAlgorithm = new FloodingAlgorithm();
+        //floodingAlgorithm.printResults(floodingAlgorithm.run(), floodingAlgorithm.getStartPositions());
+
+        new RandomWalkAlgorithm().run();
     }
 }

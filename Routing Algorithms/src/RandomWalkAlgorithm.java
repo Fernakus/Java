@@ -11,7 +11,7 @@ import java.util.Random;
 public class RandomWalkAlgorithm {
     // Variables
     private Random random;
-    private final int MAX_STEPS = 14*7;
+    private final int MAX_STEPS = 1000;
     private int stepsTaken, x, y;
 
     // No-arg Constructor
@@ -21,6 +21,16 @@ public class RandomWalkAlgorithm {
         x = 3;
         y = 3;
     }
+
+    /*
+     * -- Methods --
+     * 1. floodGrid()
+     * 2. showGrids()
+     * 3. showGrid()
+     * 4. run()
+     * 5. printResults()
+     * 6. cloneGrid()
+     */
 
     // run()
     public void run() {
@@ -61,7 +71,7 @@ public class RandomWalkAlgorithm {
         System.out.println();
         System.out.println("Starting Time: " + start);
         System.out.println("Ending Time: " + end);
-        System.out.println("Difference (Nanoseconds): " + (end.getNano() - start.getNano()));
+        System.out.println("Difference (Nanoseconds): " + Math.abs(end.getNano() - start.getNano()));
         System.out.println("Steps Taken = " + stepsTaken);
     }
 }

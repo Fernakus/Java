@@ -20,22 +20,22 @@ public class BinarySearchTree implements Cloneable, Serializable{
 	private class TreeNode {
 		// Variables
 		private TreeNode left, right;
-		private CentralizedAlgorithm.Node object;
+		private CentralizedAlgorithm.Node node;
 		
 		// No-arg Constructor
 		public TreeNode() {
-			object = null;
+			node = null;
 			left = right = null;		
 		}
 		
 		// Single-arg Constructor
 		public TreeNode(CentralizedAlgorithm.Node object) {
-			this.object = object;
+			this.node = object;
 			left = right = null;	
 		}
 
 		public void beginFlood() {
-			object.run();
+			node.run();
 		}
 	}
 	
@@ -70,14 +70,14 @@ public class BinarySearchTree implements Cloneable, Serializable{
 			return root;
 		}
 		
-		if (root.object.equals(object)) 
+		if (root.node.equals(object))
 			return root;
 		
 		// Recursive Calls
-		if (object.toString().compareTo(root.object.toString()) < 0) 
+		if (object.toString().compareTo(root.node.toString()) < 0)
 			root.left = insert(object, root.left);
 		
-		else if (object.toString().compareTo(root.object.toString()) > 0) 
+		else if (object.toString().compareTo(root.node.toString()) > 0)
 			root.right = insert(object, root.right);
 		
 		return root;
@@ -112,7 +112,7 @@ public class BinarySearchTree implements Cloneable, Serializable{
 		
 		// Recursive Traversal
 		inPrint(root.left);
-		System.out.print("(" + root.object + ") --> ");
+		System.out.print("(" + root.node + ") --> ");
 		inPrint(root.right);
 	}
 
@@ -131,7 +131,7 @@ public class BinarySearchTree implements Cloneable, Serializable{
 		traverseAndRun(root.left);
 
 		try {
-			Thread thread = new Thread(root.object);
+			Thread thread = new Thread(root.node);
 			thread.start();
 			thread.join();
 		}
