@@ -123,26 +123,23 @@ public class BinarySearchTree implements Cloneable, Serializable{
 
 	// traverseAndRun()
 	private void traverseAndRun(TreeNode root) {
-		// Base Case
-		if (root == null)
-			return;
-
-		// Recursive Traversal
-		traverseAndRun(root.left);
-
 		try {
+			// Base Case
+			if (root == null)
+				return;
+
+			// Recursive Traversal
+			traverseAndRun(root.left);
+
 			Thread thread = new Thread(root.node);
 			thread.start();
 			thread.join();
+
+			traverseAndRun(root.right);
 		}
 
 		catch (Exception ex) {
 			System.out.println(ex);
 		}
-
-
-		traverseAndRun(root.right);
 	}
-
-	
 }

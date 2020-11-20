@@ -5,32 +5,116 @@
  *  Date:	 November 12th 2020
  *  Class:   COSC4436
  *  ------------------------------------------------------- */
-import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class FloodingAlgorithm {
     // Variables
     private int[] startingPositions;
-    private ArrayList<String[][]> solvedGrids;
     private ArrayList<String[][]> unsolvedGrids;
-    private final String[][] baseGrid = {{"-------", "-------", "-------", "-------", "-------", "-------", "-------"},
-                                         {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
-                                         {"-------", "-------", "NetNode", "-------", "NetNode", "-------", "-------"},
-                                         {"-------", "-------", "-------", "NetNode", "NetNode", "-------", "-------"},
-                                         {"-------", "NetNode", "NetNode", "NetNode", "-------", "-------", "-------"},
-                                         {"-------", "NetNode", "-------", "-------", "-------", "-------", "-------"},
-                                         {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
-                                         {"-------", "-------", "-------", "-------", "-------", "NetNode", "-------"},
-                                         {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
-                                         {"-------", "-------", "NetNode", "-------", "NetNode", "-------", "-------"},
-                                         {"-------", "-------", "-------", "NetNode", "NetNode", "-------", "-------"},
-                                         {"-------", "NetNode", "NetNode", "NetNode", "-------", "-------", "-------"},
-                                         {"-------", "NetNode", "-------", "-------", "-------", "-------", "-------"},
-                                         {"-------", "-------", "-------", "-------", "-------", "-------", "-------"}};
+    private String[][] baseGrid = {{"-------", "-------", "-------", "-------", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "NetNode", "-------", "NetNode", "-------", "-------"},
+                                   {"-------", "-------", "-------", "NetNode", "NetNode", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "-------", "-------", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "-------", "-------", "-------", "NetNode", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "NetNode", "-------", "NetNode", "-------", "-------"},
+                                   {"-------", "-------", "-------", "NetNode", "NetNode", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "-------", "-------", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "NetNode", "-------", "NetNode", "-------", "-------"},
+                                   {"-------", "-------", "-------", "NetNode", "NetNode", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "-------", "-------", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "-------", "-------", "-------", "NetNode", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "NetNode", "-------", "NetNode", "-------", "-------"},
+                                   {"-------", "-------", "-------", "NetNode", "NetNode", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "-------", "-------", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "NetNode", "-------", "NetNode", "-------", "-------"},
+                                   {"-------", "-------", "-------", "NetNode", "NetNode", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "-------", "-------", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "-------", "-------", "-------", "NetNode", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "NetNode", "-------", "NetNode", "-------", "-------"},
+                                   {"-------", "-------", "-------", "NetNode", "NetNode", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "-------", "-------", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "NetNode", "-------", "NetNode", "-------", "-------"},
+                                   {"-------", "-------", "-------", "NetNode", "NetNode", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "-------", "-------", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "-------", "-------", "-------", "NetNode", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "NetNode", "NetNode", "-------"},
+                                   {"-------", "-------", "NetNode", "-------", "NetNode", "-------", "-------"},
+                                   {"-------", "-------", "-------", "NetNode", "NetNode", "-------", "-------"},
+                                   {"-------", "NetNode", "NetNode", "NetNode", "-------", "-------", "-------"},
+                                   {"-------", "NetNode", "-------", "-------", "-------", "-------", "-------"},
+                                   {"-------", "-------", "-------", "-------", "-------", "-------", "-------"}};
+
+    private String[][] solvedGrid = {{"-------", "-------", "-------", "-------", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "Visited", "-------", "Visited", "-------", "-------"},
+                                     {"-------", "-------", "-------", "Visited", "Visited", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "-------", "-------", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "-------", "-------", "-------", "Visited", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "Visited", "-------", "Visited", "-------", "-------"},
+                                     {"-------", "-------", "-------", "Visited", "Visited", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "-------", "-------", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "Visited", "-------", "Visited", "-------", "-------"},
+                                     {"-------", "-------", "-------", "Visited", "Visited", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "-------", "-------", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "-------", "-------", "-------", "Visited", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "Visited", "-------", "Visited", "-------", "-------"},
+                                     {"-------", "-------", "-------", "Visited", "Visited", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "-------", "-------", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "Visited", "-------", "Visited", "-------", "-------"},
+                                     {"-------", "-------", "-------", "Visited", "Visited", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "-------", "-------", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "-------", "-------", "-------", "Visited", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "Visited", "-------", "Visited", "-------", "-------"},
+                                     {"-------", "-------", "-------", "Visited", "Visited", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "-------", "-------", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "Visited", "-------", "Visited", "-------", "-------"},
+                                     {"-------", "-------", "-------", "Visited", "Visited", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "-------", "-------", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "-------", "-------", "-------", "Visited", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "Visited", "Visited", "-------"},
+                                     {"-------", "-------", "Visited", "-------", "Visited", "-------", "-------"},
+                                     {"-------", "-------", "-------", "Visited", "Visited", "-------", "-------"},
+                                     {"-------", "Visited", "Visited", "Visited", "-------", "-------", "-------"},
+                                     {"-------", "Visited", "-------", "-------", "-------", "-------", "-------"},
+                                     {"-------", "-------", "-------", "-------", "-------", "-------", "-------"}};
 
     // No-arg Constructor
     public FloodingAlgorithm() {
-        solvedGrids = new ArrayList<>();
         unsolvedGrids = new ArrayList<>();
         startingPositions = new int[2000];
 
@@ -53,26 +137,12 @@ public class FloodingAlgorithm {
         if (networkGrid[row][col].equals("NetNode")) {
             // Base Case
             networkGrid[row][col] = "Visited";
-            solvedGrids.add(networkGrid);
 
             // Recursive Calls To Flood
             floodGrid(networkGrid, row + 1, col);
             floodGrid(networkGrid, row - 1, col);
             floodGrid(networkGrid, row, col + 1);
             floodGrid(networkGrid, row, col - 1);
-        }
-    }
-
-    // showGrids()
-    private void showGrids(ArrayList<String[][]> grids) {
-        for (String[][] grid : grids) {
-            System.out.println();
-            for (int x = 0; x < grid.length; x++) {
-                for (int y = 0; y < grid[x].length; y++)
-                    System.out.print(grid[x][y] + " ");
-                System.out.println();
-            }
-            System.out.println();
         }
     }
 
@@ -93,23 +163,23 @@ public class FloodingAlgorithm {
     }
 
     // run()
-    public LocalTime[] run() {
+    public long[] run() {
         // Start Algorithm
-        LocalTime[] times = new LocalTime[2000];
+        long[] times = new long[2000];
+        long start, end;
         int row, col;
 
         // Start Algorithm
         for (int i = 0; i < 1000; i++) {
-            row = (int)(Math.random() * (12 - 1 + 1) + 1);
+            row = (int)(Math.random() * (48 - 1 + 1) + 1);
             col = (int)(Math.random() * (5 - 1 + 1) + 1);
 
-            LocalTime start = LocalTime.now();
+            start = System.nanoTime();
             floodGrid(unsolvedGrids.get(i), row, col);
-            LocalTime end = LocalTime.now();
+            end = System.nanoTime();
 
             times[i] = start;
             times[i+1] = end;
-
             startingPositions[i] = row;
             startingPositions[i+1] = col;
         }
@@ -118,48 +188,52 @@ public class FloodingAlgorithm {
     }
 
     // printResults()
-    public void printResults(LocalTime[] results, int[] startingPositions) {
+    public void printResults(long[] results, int[] startingPositions) {
         System.out.println();
         System.out.println();
         System.out.println("-- Solved Network Grids --");
-        showGrids(solvedGrids);
 
         System.out.println();
         System.out.println();
         System.out.println("---------------------------------------------------------------- Flooding Algorithm Test --------------------------------------------------------------");
-        System.out.println(" The flooding algorithm is run on a 2D Matrix [14x7]. It floods the matrix recursively, visiting each indexed position which simulates a network node.");
+        System.out.println(" The flooding algorithm is run on a 2D Matrix [50x7]. It floods the matrix recursively, visiting each indexed position which simulates a network node.");
         System.out.println(" Once the node is visited, it gets marked off as visited. We can see the matrix change as all the unvisited nodes become visited.");
-        System.out.println(" This test is run on 5 2D Matrices[14x7], generating a random index point (row,col) to begin at an arbitrary spot in the network.");
-        System.out.println(" Running 1000 test cases on 1000 2D Matrices[14x7]...");
+        System.out.println(" This test is run on 5 2D Matrices[50x7], generating a random index point (row,col) to begin at an arbitrary spot in the network.");
+        System.out.println(" Running 1000 test cases on 1000 2D Matrices[50x7]...");
 
         System.out.println();
-        System.out.println("-- Starting Network Grid --");
+        System.out.println(" -- Starting Network Grid --");
         showGrid(baseGrid);
 
-        int[] differences = new int[1000];
+        System.out.println(" -- Solved Network Grid --");
+        floodGrid(baseGrid, (int)(Math.random() * (48 - 1 + 1) + 1), (int)(Math.random() * (5 - 1 + 1) + 1));
+        showGrid(solvedGrid);
+
+        long[] differences = new long[1000];
+
         for (int i = 0; i < results.length/2; i++) {
-            System.out.println("-- Results Test #" + (i+1) + " --");
-            System.out.println("Starting Coordinates: (" + startingPositions[i] + "," + startingPositions[i+1] + ")");
-            System.out.println("Starting Time: " + results[i]);
-            System.out.println("Ending Time: " + results[i+1]);
-            differences[i] = Math.abs(results[i].getNano() - results[i + 1].getNano());
+            System.out.println(" -- Results Test #" + (i+1) + " --");
+            System.out.println(" Starting Coordinates: (" + startingPositions[i] + "," + startingPositions[i+1] + ")");
+            System.out.println(" Starting Time: " + results[i]);
+            System.out.println(" Ending Time: " + results[i+1]);
 
+            differences[i] = Math.abs(results[i] - results[i+1]);
 
-            System.out.println(String.format("Difference (Nanoseconds): %d", differences[i]));
+            System.out.println(String.format(" Difference (Nanoseconds): %d", differences[i]));
             System.out.println();
         }
 
         int avgRuntime = 0;
-        for (int i : differences)
+        for (long i : differences)
             avgRuntime += i;
 
-        System.out.println(String.format("Best Average Runtime: %d", Math.abs(avgRuntime/1000)));
+        System.out.println(String.format(" Average Runtime: %d", Math.abs(avgRuntime/1000)));
         System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------------");
     }
 
     // cloneGrid()
     public String[][] cloneGrid(String[][] grid) {
-        String[][] newGrid = new String[14][7];
+        String[][] newGrid = new String[50][7];
 
         for (int x = 0; x < grid.length; x++)
             for (int y = 0; y < grid[x].length; y++)

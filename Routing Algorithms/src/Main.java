@@ -16,6 +16,7 @@ public class Main {
         //FloodingAlgorithm floodingAlgorithm = new FloodingAlgorithm();
         //floodingAlgorithm.printResults(floodingAlgorithm.run(), floodingAlgorithm.getStartPositions());
 
-        new RandomWalkAlgorithm().run();
+        //RandomWalkAlgorithm randomWalkAlgorithm = new RandomWalkAlgorithm();
+        //randomWalkAlgorithm.printResults(randomWalkAlgorithm.run());
     }
 }
