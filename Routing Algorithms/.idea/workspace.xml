@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="b58c098d-13ef-4e4c-aa1b-5f4ffb86d2bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Routing Algorithms/CentralizedAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Routing Algorithms/CentralizedAlgorithm.class" afterDir="false" />
@@ -15,19 +16,21 @@
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+=======
+    <list default="true" id="b58c098d-13ef-4e4c-aa1b-5f4ffb86d2bf" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -102,6 +105,19 @@
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1kc3eBTpK3ggmoraF3tDeXKzUU3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+>>>>>>> Stashed changes
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -116,18 +132,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="S:\Computer Science\Code\Java\Routing Algorithms\src" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -153,6 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605248407125</updated>
+<<<<<<< Updated upstream
       <workItem from="1605248411395" duration="727000" />
       <workItem from="1605249174689" duration="3553000" />
       <workItem from="1605475971301" duration="387000" />
@@ -160,6 +165,10 @@
       <workItem from="1605730721815" duration="4776000" />
       <workItem from="1605793619378" duration="3957000" />
       <workItem from="1605802307467" duration="12198000" />
+=======
+      <workItem from="1605248411395" duration="88000" />
+      <workItem from="1605986155822" duration="1000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="Adding to Centralized Algorithm">
       <created>1605731680913</created>
@@ -178,6 +187,7 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+<<<<<<< Updated upstream
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="27866000" />
   </component>
@@ -302,6 +312,11 @@
       </provider>
     </entry>
   </component>
+=======
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+>>>>>>> Stashed changes
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
