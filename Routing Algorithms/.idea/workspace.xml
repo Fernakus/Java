@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <list default="true" id="b58c098d-13ef-4e4c-aa1b-5f4ffb86d2bf" name="Default Changelist" comment="">
+=======
+    <list default="true" id="b58c098d-13ef-4e4c-aa1b-5f4ffb86d2bf" name="Default Changelist" comment="Project complete">
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Routing Algorithms/CentralizedAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Routing Algorithms/CentralizedAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Routing Algorithms/DistributedAlgorithm.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Routing Algorithms/FloodingAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Routing Algorithms/FloodingAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CentralizedAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CentralizedAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DistributedAlgorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FloodingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FloodingAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomWalkAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomWalkAlgorithm.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,34 +24,15 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="244" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
 <<<<<<< Updated upstream
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/RandomWalkAlgorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#2031#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -67,14 +45,14 @@
         <option value="$PROJECT_DIR$/src/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/CentralizedAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/FloodingAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/RandomWalkAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="152" />
-    <option name="y" value="-9" />
+    <option name="x" value="129" />
+    <option name="y" value="-10" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -164,10 +142,14 @@
       <workItem from="1605723664567" duration="2268000" />
       <workItem from="1605730721815" duration="4776000" />
       <workItem from="1605793619378" duration="3957000" />
+<<<<<<< Updated upstream
       <workItem from="1605802307467" duration="12198000" />
 =======
       <workItem from="1605248411395" duration="88000" />
       <workItem from="1605986155822" duration="1000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1605802307467" duration="22661000" />
 >>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="Adding to Centralized Algorithm">
@@ -184,18 +166,31 @@
       <option name="project" value="LOCAL" />
       <updated>1605735504286</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished the Centralized Algorithm">
+      <created>1605818197039</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605818197039</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Project complete">
+      <created>1605847972762</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605847972762</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
 <<<<<<< Updated upstream
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27866000" />
+    <option name="totallyTimeSpent" value="38329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15208334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1359375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -206,8 +201,8 @@
       <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32910052" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.77883595" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.410582" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9322751" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4910053" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -235,10 +230,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding to Centralized Algorithm" />
     <MESSAGE value="Finished the Centralized Algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the Centralized Algorithm" />
+    <MESSAGE value="Project complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project complete" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Routing_Algorithms$Main.ic" NAME="Main Coverage Results" MODIFIED="1605808475734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Routing_Algorithms$Main.ic" NAME="Main Coverage Results" MODIFIED="1605843246651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/DistributedAlgorithm.java">
@@ -248,10 +244,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/2f0P7iELCvAlV8j6Z3rGDE.url">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="106" column="16" lean-forward="true" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
+        <state relative-caret-position="1098">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
           <folding>
             <element signature="method#insert#1;class#BinarySearchTree#0" />
             <element signature="method#height#1;class#BinarySearchTree#0" />
@@ -262,52 +261,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/2f0P7iELCvAlV8j6Z3rGDE.url">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CentralizedAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="63" column="26" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="161" />
+        <state relative-caret-position="357">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
           <folding>
             <element signature="class#Node#0;class#CentralizedAlgorithm#0" />
             <element signature="method#CentralizedAlgorithm#0;class#CentralizedAlgorithm#0" />
             <element signature="method#run#0;class#CentralizedAlgorithm#0" />
+            <element signature="method#printResults#0;class#CentralizedAlgorithm#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FloodingAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        <state relative-caret-position="36">
+          <caret line="201" column="75" selection-start-line="201" selection-start-column="75" selection-end-line="201" selection-end-column="75" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#FloodingAlgorithm#0;class#FloodingAlgorithm#0" />
             <element signature="method#floodGrid#0;class#FloodingAlgorithm#0" />
-            <element signature="method#showGrids#0;class#FloodingAlgorithm#0" />
             <element signature="method#showGrid#0;class#FloodingAlgorithm#0" />
             <element signature="method#run#0;class#FloodingAlgorithm#0" />
-            <element signature="method#printResults#0;class#FloodingAlgorithm#0" />
             <element signature="method#cloneGrid#0;class#FloodingAlgorithm#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandomWalkAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="method#RandomWalkAlgorithm#0;class#RandomWalkAlgorithm#0" />
+            <element signature="method#run#0;class#RandomWalkAlgorithm#0" />
+            <element signature="method#printResults#0;class#RandomWalkAlgorithm#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RandomWalkAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#2031#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
